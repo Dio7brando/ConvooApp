@@ -14,8 +14,9 @@ import {
 } from "@mui/icons-material";
 import io from "socket.io-client";
 import styles from "../styles/VideoComponent.module.css";
+import server from "../environment";
 
-const server_url = "http://localhost:8080";
+const server_url = server;
 
 var connections = {};
 
