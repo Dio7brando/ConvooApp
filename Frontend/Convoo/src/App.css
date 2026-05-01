@@ -1,0 +1,260 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h1 {
+  font-size: 1.8rem;
+  font-weight: 1000;
+  color: #D97500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #D97500, #FF9839);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.landingPageContainer nav .navList {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingPageContainer nav .navList p,
+.landingPageContainer nav .navList div {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #D97500;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.landingPageContainer nav .navList p:hover,
+.landingPageContainer nav .navList div:hover {
+  background: #FF9839;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer > div:nth-child(1) {
+    font-size: 2.2rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] {
+    background: #D97500;
+    width: fit-content;
+    padding: 1rem;   
+    border-radius: 20px;
+    margin-top: 1.4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"]:hover {
+    background: #FF9839;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 68vh;
+  width: auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .landingPageContainer nav {
+    padding-inline: 1rem;
+    padding-block: 1rem;
+  }
+
+  .landingPageContainer nav h1 {
+    font-size: 1.5rem;
+  }
+
+  .landingPageContainer nav .navList {
+    gap: 1rem;
+  }
+
+  .landingMainContainer {
+    flex-direction: column;
+    padding-inline: 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .landingMainContainer > div:nth-child(1) {
+    font-size: 1.8rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role="button"] {
+    padding: 0.8rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role="button"] a {
+    font-size: 1.4rem;
+  }
+
+  .landingMainContainer > div:nth-child(2) img {
+    height: 50vh;
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+.meetContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+.leftPanel {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.rightPanel {
+  flex: 1;
+  text-align: center;
+}
+
+.rightPanel img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive for home */
+@media (max-width: 768px) {
+  .meetContainer {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .leftPanel {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .rightPanel {
+    order: -1;
+  }
+}
+
+.historyContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .historyContainer {
+    padding: 1rem;
+  }
+}
+
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 8vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1 1 360px;
+}
+
+.leftPanel > div {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.leftPanel h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.leftPanel .MuiTextField-root {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+  flex: 1 1 420px;
+  justify-content: center;
+}
+
+.rightPanel > img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.2);
+}
+
+.meetContainer button.MuiButton-contained {
+  background: linear-gradient(45deg, #D97500, #FF9839);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(217, 117, 0, 0.22);
+}
+
+.meetContainer button.MuiButton-contained:hover {
+  background: linear-gradient(45deg, #FF9839, #D97500);
+}
+
+.meetContainer p {
+  margin: 0 1rem;
+  color: white;
+}
